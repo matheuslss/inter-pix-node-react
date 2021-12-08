@@ -2,9 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     * {
-        font-family: 'Roboto', sans-serif;
         padding: 0;
         margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
     }
 
     body {
@@ -18,7 +19,10 @@ const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
         color: ${({ theme }) => theme.colors.primary};
-        font-weight: 700;
+         
+        &:hover {
+            filter: opacity(0.8)
+        }
     }
 
     .primary-color {
@@ -27,6 +31,20 @@ const GlobalStyle = createGlobalStyle`
 
     .font-bold {
         font-weight: 700;
+    }
+
+    .h2{
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 28px;
+        color: #000000;
+    }
+    
+    .wallet{
+        font-weight: 500;
+        color: ${({ theme }) => theme.colors.primary};
+        font-size: 2.5rem; //40px
+        line-height: 47px;
     }
 `;
 
