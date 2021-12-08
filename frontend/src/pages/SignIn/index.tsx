@@ -27,7 +27,7 @@ export default function SignIn() {
 
         <ButtonContainer>
           <Button type="button" onClick={handleToSignIn}>
-            Entrar
+            ENTRAR
           </Button>
           <p>
             Ainda não é cadastrado? <Link to="/signup">Cadastre-se Já</Link>
