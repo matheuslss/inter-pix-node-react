@@ -10,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
     body {
         background-color: ${({ theme }) => theme.colors.background};
     }
+
+    a {
+        text-decoration: none;
+    }
 `;
 
 export default GlobalStyle;
